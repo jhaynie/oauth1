@@ -6,15 +6,15 @@ Notable changes between releases.
 
 ## v0.6.0
 
-* Add Go module support ([#32](https://github.com/dghubble/oauth1/pull/32))
+* Add Go module support ([#32](https://github.com/jhaynie/oauth1/pull/32))
 
 ## v0.5.0
 
-* Use standard library `context` ([c0a405](https://github.com/dghubble/oauth1/commit/c0a405baf29f5ed2616bc1ef6b778532c960aa5b))
+* Use standard library `context` ([c0a405](https://github.com/jhaynie/oauth1/commit/c0a405baf29f5ed2616bc1ef6b778532c960aa5b))
   * Requires Go 1.7+
-* Add `xing` package with a provider `Endpoint` ([#10](https://github.com/dghubble/oauth1/pull/10))
-* Add status code checks so server errors are clearer ([09fded](https://github.com/dghubble/oauth1/commit/b0d5c93a5292844f3fd568893ce4e12bdcdb79ae))
-* Move confirmed check after token check so errors are clearer ([#8](https://github.com/dghubble/oauth1/pull/8))
+* Add `xing` package with a provider `Endpoint` ([#10](https://github.com/jhaynie/oauth1/pull/10))
+* Add status code checks so server errors are clearer ([09fded](https://github.com/jhaynie/oauth1/commit/b0d5c93a5292844f3fd568893ce4e12bdcdb79ae))
+* Move confirmed check after token check so errors are clearer ([#8](https://github.com/jhaynie/oauth1/pull/8))
 
 ## v0.4.0
 

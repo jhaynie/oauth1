@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/dghubble/oauth1"
-	"github.com/dghubble/oauth1/tumblr"
+	"github.com/jhaynie/oauth1"
+	"github.com/jhaynie/oauth1/tumblr"
 )
 
 var config oauth1.Config

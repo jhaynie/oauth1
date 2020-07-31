@@ -2,7 +2,7 @@
 package xing
 
 import (
-	"github.com/dghubble/oauth1"
+	"github.com/jhaynie/oauth1"
 )
 
 // Endpoint is Xing's OAuth 1 endpoint.

@@ -1,19 +1,21 @@
-# OAuth1 [![Build Status](https://travis-ci.org/dghubble/oauth1.svg?branch=master)](https://travis-ci.org/dghubble/oauth1) [![GoDoc](http://godoc.org/github.com/dghubble/oauth1?status.svg)](http://godoc.org/github.com/dghubble/oauth1)
+# OAuth1 [![Build Status](https://travis-ci.org/dghubble/oauth1.svg?branch=master)](https://travis-ci.org/dghubble/oauth1) [![GoDoc](http://godoc.org/github.com/jhaynie/oauth1?status.svg)](http://godoc.org/github.com/jhaynie/oauth1)
 <img align="right" src="https://storage.googleapis.com/dghubble/oauth1.png">
 
 Package `oauth1` provides a Go implementation of the [OAuth 1 spec](https://tools.ietf.org/html/rfc5849) to allow end-users to authorize a client (i.e. consumer) to access protected resources on his/her behalf.
 
 `oauth1` takes design cues from [golang.org/x/oauth2](https://godoc.org/golang.org/x/oauth2), to provide an analogous API and an `http.Client` with a Transport which signs/authorizes requests.
 
+> This is a fork of https://github.com/dghubble/oauth1 to expose some methods for Auth without having to use the builtin client directly
+
 ## Install
 
 ```
-go get github.com/dghubble/oauth1
+go get github.com/jhaynie/oauth1
 ```
 
 ## Docs
 
-Read [GoDoc](https://godoc.org/github.com/dghubble/oauth1)
+Read [GoDoc](https://godoc.org/github.com/jhaynie/oauth1)
 
 ## Usage
 
@@ -33,8 +35,8 @@ Perform the OAuth 1 authorization flow to ask a user to grant an application acc
 
 ```go
 import (
-    "github.com/dghubble/oauth1"
-    "github.com/dghubble/oauth1/twitter"
+    "github.com/jhaynie/oauth1"
+    "github.com/jhaynie/oauth1/twitter"
 )
 ...
 
@@ -84,7 +86,7 @@ Use an access `Token` to make authorized requests on behalf of a user.
 
 ```go
 import (
-    "github.com/dghubble/oauth1"
+    "github.com/jhaynie/oauth1"
 )
 
 func main() {

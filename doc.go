@@ -29,8 +29,8 @@ Perform the OAuth 1 authorization flow to ask a user to grant an application
 access to his/her resources via an access token.
 
 	import (
-		"github.com/dghubble/oauth1"
-		"github.com/dghubble/oauth1/twitter""
+		"github.com/jhaynie/oauth1"
+		"github.com/jhaynie/oauth1/twitter""
 	)
 	...
 
@@ -74,7 +74,7 @@ Authorized Requests
 Use an access Token to make authorized requests on behalf of a user.
 
 	import (
-		"github.com/dghubble/oauth1"
+		"github.com/jhaynie/oauth1"
 	)
 
 	func main() {

@@ -49,7 +49,7 @@ func NewClient(ctx context.Context, config *Config, token *Token) *http.Client {
 	transport := &Transport{
 		Base:   contextTransport(ctx),
 		source: StaticTokenSource(token),
-		auther: newAuther(config),
+		Auther: NewAuther(config),
 	}
 	return &http.Client{Transport: transport}
 }
@@ -65,7 +65,7 @@ func (c *Config) RequestToken() (requestToken, requestSecret string, err error) 
 	if err != nil {
 		return "", "", err
 	}
-	err = newAuther(c).setRequestTokenAuthHeader(req)
+	err = NewAuther(c).SetRequestTokenAuthHeader(req)
 	if err != nil {
 		return "", "", err
 	}
@@ -142,7 +142,7 @@ func (c *Config) AccessToken(requestToken, requestSecret, verifier string) (acce
 	if err != nil {
 		return "", "", err
 	}
-	err = newAuther(c).setAccessTokenAuthHeader(req, requestToken, requestSecret, verifier)
+	err = NewAuther(c).SetAccessTokenAuthHeader(req, requestToken, requestSecret, verifier)
 	if err != nil {
 		return "", "", err
 	}
